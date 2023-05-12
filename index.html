@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3leventos</title>
+    <link rel="icon" type="imagem/png" href="./img/Ana(1).png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.0/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <script src="https://kit.fontawesome.com/8d21d55a6a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <section class="header">
+    <nav>
+        <a href="index.html"><img src="./img/Logo2.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-sharp fa-solid fa-xmark" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="https://tech.animerigel.com/KV2YJ7l">COMPRAR</a></li>
+                <li><a href="#1">PREÇO</a></li>
+                <li><a href="#2">LOCAL</a></li>
+                <li><a href="#3">SOBRE NOS</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-solid fa-bars" onclick="showMenu()"></i>
+    </nav>    
+
+    <div class="text-box">
+        <h1>MC Pedrinho<br>encontro com Fãs</h1>
+      <p>Enconcro especial do MC Pedrinho <br>com os fãs</p>
+        <a href="https://tech.animerigel.com/KV2YJ7l" class="hero-btn">Compre ingressos aqui!</a>
+    </div>
+
+    </section>
+
+    <section class="course" id="1">
+        <h1>Ingressos</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio!</p>
+    
+    <div class="row">
+    <div class="course-col">
+        <h3>PISTA</h3>
+        <p>Pista de dança, animado por DJ'S e tendo o MC Pedrinho como atração principal.</p>
+        <h3>R$ 105,00</h3>
+    </div>
+    <div class="course-col">
+        <h3>PISTA <br>(Meia Entrada)</h3>
+        <p>Somente para estudantes, professores e idosos caso contrário, será barrado e cobrado a taxa cheia<br><span style="color:red">evite transtorno!</span></p>
+        <h3>R$ 75,00</h3>
+    </div>
+    <div class="course-col">
+        <h3>CAMAROTE</h3>
+        <p><i class="fa-solid fa-face-smile fa-2xl" style="color: #ffff80;"></i><br><br> limite de 10 pessoas</p>
+        <h3>R$ 750,00</h3>
+    </div>
+    </div>
+    </section>
+
+    <section class="location" id="2">
+        <h1>Localização = <a style="color:orangered" href="https://www.google.com/maps/place/Vip+Station/@-23.648157,-46.716161,16z/data=!4m6!3m5!1s0x94ce515738380539:0xba3874403a52b7f5!8m2!3d-23.6481566!4d-46.7161613!16s%2Fg%2F11q8vbjsdg?hl=pt-BR">clique aqui</a></h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.776982319914!2d-46.718349985020616!3d-23.648156584639917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce515738380539%3A0xba3874403a52b7f5!2sVip%20Station!5e0!3m2!1spt-BR!2sbr!4v1683807995721!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    
+   
+<!-- Footer -->
+
+<section class="footer" id="3">
+    <h4>Sobre nós</h4>
+    <p>Somos uma equipe iniciante, traballhamos com shows e eventos.<br><br>comercial@3leventos.com.br
+    <div class="icons">
+        <a href="https://www.facebook.com/profile.php?id=100092619605153"><i class="fa-brands fa-facebook"></i></a>
+        <i class="fa-brands fa-instagram"></i>
+        <a href="https://api.whatsapp.com/send?phone=5511952494821"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+    <p>Feito com <i class="fa-solid fa-heart" style="color: red;"></i> by Polvinho Maravilha</p>
+    <p style="font-size: 10px;">Aqui meu <a href="https://tech.animerigel.com/9tnHDXG" style="color: orangered; ">discord</a> para sugestão de melhora no site e posts</p>
+</section>
+
+<!-- JavaScript for toggle menu -->
+
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right="-200px";
+    }
+
+</script>
+
+</body>
+</html>
