@@ -1,3 +1,12 @@
+:root {
+    --primary-color: #f2c9dc;
+    --secondary-color: #BF9FAe;
+    --dark-color: #0d0d0d;
+    --light-color: #f4f4f4;
+    --tertiary-color: #735f68;
+    --quaternary-color: #40353a;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -10,7 +19,7 @@ html{
 
 
 body{
-    background-color: #bf9fae;
+    background-color: var(--primary-color);
 }
 
 #a1, #a2, #a3{
@@ -40,7 +49,7 @@ nav{
 
 .navbar {
     height: 50px;
-    background-color: #735f68;
+    background-color: var(--secondary-color);
      transition: background-color .4s ease-in-out;
      padding: 1% 6%;
 }
@@ -87,7 +96,7 @@ nav img{
 }
 
 .nav-links ul li a{
-    color: white;
+    color: var(--dark-color);
     text-decoration: none;
     font-size: 13px;
 }
@@ -96,7 +105,7 @@ nav img{
     content: '';
     width: 0%;
     height: 2px;
-    background: #735f68;
+    background: var(--tertiary-color);
     display: block;
     margin: auto;
     transition: 0.5s;
@@ -108,7 +117,7 @@ nav img{
 
 .text-box{
     width: 80%;
-    color: white;
+    color: var(--dark-color);
     position: absolute;
     top: 40%;
     left: 60%;
@@ -123,14 +132,14 @@ nav img{
 .text-box p{
     margin: 10px 0 40px;
     font-size: 14px;
-    color: white;
+    color: var(--dark-color);
 }
 
 .hero-btn{
     display: inline-block;
     text-decoration: none;
-    color: white;
-    border: 1px solid #fff;
+    color: var(--dark-color);
+    border: 1px solid var(--tertiary-color);
     padding: 12px 34px;
     font-size: 13px;
     background: transparent;
@@ -139,17 +148,34 @@ nav img{
 }
 
 .hero-btn:hover{
-    border: 1px solid #735f68;
-    background: #735f68;
+    border: 1px solid var(--tertiary-color);
+    background: var(--tertiary-color);
     transition: 1s;
+    color: var(--light-color);
 }
 
 nav .fa{
     display: none;
 }
 
-@media (max-width: 700px){
+@media (max-width: 374px){
     
+    .header{
+        background-image: url(./img/cel2.png);
+    }
+
+    .text-box{
+        top: 50%;
+        left: 50%;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 913px){
+    
+.header{
+    background-image: url(./img/cel.png);
+}
+
     .text-box h1{
         font-size: 20px;
     }
@@ -160,7 +186,7 @@ nav .fa{
 
     .nav-links{
         position: fixed;
-        background: #735f68;
+        background: var(--secondary-color);
         height: 100vh;
         width: 200px;
         top: 0;
@@ -172,7 +198,7 @@ nav .fa{
 
     nav .fa{
         display: block;
-        color: white;
+        color: var(--dark-color);
         margin: 10px;
         font-size: 22px;
         cursor: pointer;
