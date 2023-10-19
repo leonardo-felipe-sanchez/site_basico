@@ -196,7 +196,7 @@ nav .fa{
         transition: 1s;
     }
 
-    nav .fa{
+    nav .fa {
         display: block;
         color: var(--dark-color);
         margin: 10px;
