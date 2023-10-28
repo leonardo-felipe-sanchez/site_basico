@@ -1,10 +1,10 @@
 :root {
-    --primary-color: #f2c9dc;
-    --secondary-color: #BF9FAe;
+    --primary-color: #0C355B;
+    --secondary-color: #72a2ef7d;
     --dark-color: #0d0d0d;
     --light-color: #f4f4f4;
-    --tertiary-color: #735f68;
-    --quaternary-color: #40353a;
+    --tertiary-color: #5f578e;
+    --quaternary-color:  #144e8593;
 }
 
 *{
@@ -17,19 +17,28 @@ html{
 	scroll-behavior: smooth;
 }
 
+.logo a{
+    display: flex;
+   color: white;
+   text-decoration: none;
+   
+}
+
+.logo a img{
+    height: 10px;
+}
 
 body{
     background-color: var(--primary-color);
 }
 
-#a1, #a2, #a3{
-    display: none;
-}
+
 
 .header{
-    min-height: 100vh;
+    min-height: 10px;
+    height: 100vh;
     width: 100%;
-    background-image: url(./img/sem\ fundo.png);
+    background-color: var(--quaternary-color);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -48,10 +57,13 @@ nav{
 
 
 .navbar {
-    height: 50px;
-    background-color: var(--secondary-color);
-     transition: background-color .4s ease-in-out;
+    height: 70px;
+    background-color: var(--primary-color);
      padding: 1% 6%;
+}
+
+.navbar, .letrinha{
+    transition: background-color .4s ease-in-out;
 }
 
 .onTop {
@@ -78,11 +90,6 @@ nav{
           }
           
 
-nav img{
-    width: 150px;
-    /*margin-left: 10%;*/
-}
-
 .nav-links{
     flex: 1;
     text-align: right;
@@ -96,7 +103,7 @@ nav img{
 }
 
 .nav-links ul li a{
-    color: var(--dark-color);
+    color: var(--light-color);
     text-decoration: none;
     font-size: 13px;
 }
@@ -115,13 +122,17 @@ nav img{
     width: 100%;
 }
 
+.header .text-box{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+}
+
 .text-box{
     width: 80%;
     color: var(--dark-color);
-    position: absolute;
-    top: 40%;
-    left: 60%;
-    transform: translate(-50%,-50%);
+    justify-content: center;
     text-align: center;
 }
 
@@ -129,17 +140,20 @@ nav img{
     font-size: 62px;
 }
 
-.text-box p{
+.header .text-box p{
     margin: 10px 0 40px;
     font-size: 14px;
-    color: var(--dark-color);
+    color: var(--light-color);
 }
+
+
 
 .hero-btn{
     display: inline-block;
     text-decoration: none;
-    color: var(--dark-color);
-    border: 1px solid var(--tertiary-color);
+    color: var(--light-color);;
+    font-weight: bolder;
+    border: 1px solid var(--primary-color);
     padding: 12px 34px;
     font-size: 13px;
     background: transparent;
@@ -148,35 +162,60 @@ nav img{
 }
 
 .hero-btn:hover{
-    border: 1px solid var(--tertiary-color);
-    background: var(--tertiary-color);
+    background: var(--primary-color);
     transition: 1s;
-    color: var(--light-color);
 }
 
 nav .fa{
     display: none;
 }
 
-@media (max-width: 374px){
-    
-    .header{
-        background-image: url(./img/cel2.png);
-    }
+.logo a{
+    display: flex;
+   color: white;
+   text-decoration: none;
 
+}
+
+.logo a img{
+    height: 70px;
+    margin: 0 0 0 0;
+}
+
+.filter-white{
+filter:    invert(100%) sepia(0%) saturate(7487%) hue-rotate(109deg) brightness(100%) contrast(103%);
+}
+
+#folha{
+    transform: scaleX(-1);
+    rotate: 270deg;
+    width: 13px;
+    margin-right: -16px;
+    margin-top: -5.1px;
+    filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
+}
+@media (max-width: 280px){
+nav .flex{
+    display: block;
+}
+
+.logo a {
+
+justify-content: center;
+
+}
+
+.navbar{
+    height: 119px;
+}
+}
+
+@media (max-width: 913px){
     .text-box{
         top: 50%;
         left: 50%;
     }
-}
-
-@media (min-width: 375px) and (max-width: 913px){
-    
-.header{
-    background-image: url(./img/cel.png);
-}
-
-    .text-box h1{
+    .text-box h1, .location h1, .course h1{
         font-size: 20px;
     }
 
@@ -197,7 +236,7 @@ nav .fa{
     }
     nav .fa{
         display: block;
-        color: var(--dark-color);
+        color: var(--light-color);
         margin: 10px;
         font-size: 22px;
         cursor: pointer;
@@ -208,14 +247,70 @@ nav .fa{
     }
 }
 
+.carousel {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: var(--quaternary-color);;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+  } 
+    
+  .carousel .carousel-item {
+    position: absolute;
+    width: 100%;
+  
+    height: 100vh;
+    border: 1px solid #2e2e2e;
+    top: 0;
+    left: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .carousel .carousel-item.active {
+    left: 0;
+    transition: all 0.3s ease-out;
+  }
+  .carousel .carousel-item div {
+    height: 100%;
+  }
+
 /* course */
 
 .course{
-    width: 80%;
-    margin: auto;
+    width: 100%;
+   padding-top: 3%; 
     text-align: center;
-    padding-top: 100px;
+    justify-content: start;
+    /* background-image: url('./img/flecha-de-dardo-acertando-no-centro-do-alvo-do-alvo.png'); */
+    background-color: var(--quaternary-color);
+}
 
+/*
+.course h1{
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 5%;
+}
+*/
+.course h1{
+    text-align: center;
+}
+.course img{
+    width: 50%;
+    margin-top: 1%;
+    z-index: -1;
+}
+
+.course .text-box {
+    color: white;
+    text-align: justify;
+    margin-right: 10%;
+    width: 40%;
 }
 
 h1{
@@ -240,7 +335,7 @@ p{
 
 .course-col{
     flex-basis: 31%;
-    background: #735f68;
+    background: var(--secondary-color);
     border-radius: 10px;
     margin-bottom: 5%;
     padding: 20px 12px;
@@ -261,6 +356,26 @@ h3{
 @media(max-width: 700px){
     .row{
         flex-direction: column;
+    }
+
+
+    .course .text-box{
+        position: absolute;
+        /* right: 0; */
+        left: 0;
+        width: 80%;
+        top: 120vh;
+        margin: 21% 10%;
+    }
+
+    .course{
+        height: 100vh;
+    }
+
+    .course img{
+
+display: none;
+
     }
 }
 
@@ -296,19 +411,83 @@ h3{
 
 }
 
+
+.vision{
+    background-color: var(--tertiary-color);
+    padding: 10%
+}
+
+.vision i{
+    width: 50%;
+    font-size: 300px;
+    color: white;
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+@media (max-width: 1024px) {
+    .vision i{
+        font-size: 100px;
+    }
+}
+
 /*contact page*/
 
+
+#a2 .flex div{
+    width: 50%;
+margin: 0% 20%;
+}
 .location{
-    width: 80%;
     margin: auto;
     padding: 80px 0;
     text-align: center;
 }
 
 .location h1{
+    font-size: 35pt;
+}
+
+.location h1, .location .text-box input{
     margin-bottom: 5%;
 }
 
-.location iframe{
+.location .text-box{
+    padding: 0 5%;
+}
+
+.location .text-box input, .location .text-box textarea{
+    display: block;
     width: 100%;
+}
+
+.btn, .location .text-box input, .location .text-box textarea{
+    padding: 5px 10px;
+    border-radius: 30px;
+    border: none;
+}
+
+.btn{
+    background-color: var(--quaternary-color);
+    color: white;
+    margin-top: 5%;
+    padding: 10px 20px;
+    transition: all 1s ease-in;
+    cursor: pointer;
+}
+
+.btn:hover{
+    transform: scale(0.9);
+    background-color: var(--secondary-color);
+    transition: all 1s ease-in;
+}
+
+.location iframe{
+    width: 80%;
+}
+
+@media (max-width: 700px) {
+    #a2 .flex div{
+        width: 80%;
+    }
 }
