@@ -1,0 +1,85 @@
+         
+.header .text-box{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+}
+
+.text-box{
+    width: 80%;
+    color: var(--dark-color);
+    justify-content: center;
+    text-align: center;
+}
+
+.text-box h1{
+    font-size: 62px;
+    text-align: center;
+}
+
+.header .text-box p{
+    margin: 10px 40px;
+    font-size: 14px;
+    color: var(--light-color);
+}
+
+.course .text-box p{
+    text-align: justify;
+    margin-left: 25%;
+    width: 45%;
+}
+
+.vision .text-box {
+    text-align: justify;
+    margin-right: 5%;
+    width: 35%;
+}
+
+.location h1, .location .text-box input{
+    margin-bottom: 5%;
+}
+
+.location .text-box{
+    padding: 0 5%;
+}
+
+.location .text-box input, .location .text-box textarea{
+    display: block;
+    width: 100%;
+}
+
+.btn, .location .text-box input, .location .text-box textarea{
+    padding: 5px 10px;
+    border-radius: 30px;
+    border: none;
+}
+
+@media(max-width: 700px){
+    .course .text-box{
+        position: absolute;
+        /* right: 0; */
+        left: 0;
+        top: 120vh;
+        margin-top: 21%;
+    }
+
+    .vision .text-box h1{
+        text-align: center
+    }
+    
+    .course .text-box, .vision .text-box{
+        width: 80%;
+        margin-left:  10%;
+        margin-right: 10%;
+        height: 70%;
+    }
+.course .text-box p, .vision .text-box p{
+    margin-left: 5%;
+    width: 80%;
+}
+
+.btn, .location .text-box input, .location .text-box textarea{
+    margin-left: -10px;
+}
+}

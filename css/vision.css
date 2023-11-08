@@ -1,0 +1,44 @@
+.vision .row{
+    margin-top: 15%;
+    margin-bottom: 2%;
+}
+
+.vision i{
+    height: 100vh;
+}
+
+.vision .flex i, .course .flex i{
+    background-color: var(--tertiary-color);
+    width: 50%;
+    height: 100%;
+}
+
+.vision i, .course i{
+    font-size: 300px;
+    color: white;
+    text-align: center;
+    padding-top: 15%;
+}
+
+@media (max-width: 700px){
+ 
+.vision .flex i, .course .flex i{
+    background-color: transparent;
+    color: var(--secondary-color);
+}
+
+.vision .flex i{
+    height: 10%;
+}
+
+.vision i, .course i{
+    font-size: 100px;
+}
+
+}
+
+@media (min-width: 701px) and (max-width: 1024px) {
+    .vision i, .course i{
+        font-size: 200px;
+    }
+}

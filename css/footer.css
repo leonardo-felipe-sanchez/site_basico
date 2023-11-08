@@ -1,0 +1,30 @@
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    height: 200px;
+}
+
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.icons i{
+    color: var(--dark-color);
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+
+
+@media(max-width: 700px){
+
+    .sub-header h1{
+        font-size: 22px;
+    }
+
+}
+

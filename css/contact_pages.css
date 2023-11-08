@@ -1,0 +1,40 @@
+
+#a2 .flex div{
+    width: 50%;
+margin: 0% 20%;
+}
+.location{
+    margin: auto;
+    padding: 80px 0;
+    text-align: center;
+    margin-top: 15%;
+}
+
+.location h1{
+    font-size: 35pt;
+}
+
+.btn{
+    background-color: var(--quaternary-color);
+    color: white;
+    margin-top: 5%;
+    padding: 10px 20px;
+    transition: all 1s ease-in;
+    cursor: pointer;
+}
+
+.btn:hover{
+    transform: scale(0.9);
+    background-color: var(--secondary-color);
+    transition: all 1s ease-in;
+}
+
+.location iframe{
+    width: 80%;
+}
+
+@media (max-width: 700px) {
+    #a2 .flex div{
+        width: 80%;
+    }
+}

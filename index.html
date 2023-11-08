@@ -6,16 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>3leventos</title>
     <link rel="icon" type="imagem/png" href="./img/Ana(1).png">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/textbox.css">
+    <link rel="stylesheet" href="./css/course.css">
+    <link rel="stylesheet" href="./css/vision.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/contact_pages.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@100;200;300;400;500;600;700&family=Philosopher:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">    <script type="text/javascript" src="./js/jquery-3.6.3.min.js"></script>
-    <script type="text/javascript" src="./js/main.js"></script>
-
-    
+<script type="text/javascript" src="./js/main.js"></script>   
 <script src="https://kit.fontawesome.com/8d21d55a6a.js" crossorigin="anonymous"></script>
-<script type="text/javascript"
-src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
 </script>
 <script type="text/javascript">
   (function(){
@@ -24,7 +28,6 @@ src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
   </script>
   <script src="./js/index.js"></script>
   </head>
-
 <body>
     
     <section class="header">
@@ -34,27 +37,34 @@ src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
             <div class="container flex">
                 <div class="logo">
                     <a href="index.html" id="linkzao">
-                      <img src="./img/folha.svg" alt="" id="folha">
-                        <img src="./img/Leventos (1).svg" alt="" id="letrinha" class="letrinha filter-white">
+                      <img src="./img/folha.svg" alt="" id="folha" class="filter-green">
+                        <img src="./img/Leventos (1).svg" alt="" class="letrinha filter-white">
                      <!--  <div id="membros">3</div><div id="nome">Leventos</div>
                    <img src="./img/Leventos.png" alt="">-->
 
                 </a>
                 </div>
+
+                <label class="switch">
+                  <input type="checkbox">
+                  <div class="slider"></div>
+                </label>
+
         <div class="nav-links" id="navLinks">
-            <i class="fa fa-sharp fa-solid fa-xmark" onclick="hideMenu()"></i>
+            <i class="fa fa-sharp fa-solid fa-xmark navcolor" onclick="hideMenu()"></i>
             <ul>
-                <li><a id="wim">Em breve</a></li>
+                <li><a id="wim" class="navcolor">Em breve</a></li>
                 <!--<li><a href="#a1">PREÇO</a></li>
                 <li><a href="#a2">LOCAL</a></li>
                 <li><a href="#a3">SOBRE NOS</a></li>-->
             </ul>
         </div>
-        <i class="fa fa-solid fa-bars" onclick="showMenu()"></i>
+        <i class="fa fa-solid fa-bars navcolor" onclick="showMenu()"></i>
     </div>
         </div>
     </nav>    
 
+<!--
     <div class="text-box">
       <p>Somos uma equipe iniciante, trabalhamos com shows e eventos.</p>
         <a class="hero-btn">Em breve</a>
@@ -73,20 +83,37 @@ src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
           <div id="violet"></div>
         </div>
       </div>
+-->
+
+
+
+<div class="corpo">
+
+  <img src="../site_basico/img/pngfind.com-forest-silhouette-png-287675.svg" alt="" id="frente" class="filter-green">
+  <img src="../site_basico/img/arvore-metade.svg" alt="" id="canto" class="filter-green">
+
+<div class="logue" id="logao">
+<div class="flex">
+  <img src="./img/folha.svg" alt="" id="folhinha" class="filter-green">
+  <img src="./img/Leventos (1).svg" alt="" id="letrinha" class="filter-green">
+</div>
+</div>
+</div>
 </section>
 
 
 <section class="course" id="a1">
   
-  <div class="flex">
-    <img src="./img/flecha-de-dardo-acertando-no-centro-do-alvo-do-alvo.png" alt="">
+  <div class="flex row">
     <div class="text-box">
-    <h1>Missão</h1>
+ 
+      <h1>Missão</h1>
   
     <p>  Nossa missão é proporcionar soluções inovadoras e de alta qualidade que atendam às necessidades de nossos clientes. Estamos comprometidos em oferecer serviços excepcionais e produtos confiáveis, sempre focando na satisfação do cliente e na busca constante pela excelência.
     </p>
   
   </div>
+  <i class="fa-solid fa-bullseye"></i>
 </div>    
 
    <!--
@@ -150,11 +177,11 @@ src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
 <div class="flex row">
   <div class="text-box">
     <h1>email</h1>
-    <p>nome</p>
+    <h4>nome</h4>
 <input type="text" name="" id="name">
-<p>email</p>
+<h4>email</h4>
     <input type="email" name="" id="email">
-    <p>mensagem</p>
+    <h4>mensagem</h4>
     <textarea name="" id="message" cols="1" rows="5"></textarea>
     <button class="btn"  onclick="sendMail()">enviar mensagem</button>
   </div>
@@ -183,12 +210,15 @@ src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
         <a href="https://api.whatsapp.com/send?phone=5511952494821"><i class="fa-brands fa-whatsapp"></i></a>
     </div>
     
-</section>
+  </section>
+  
+  <!-- JavaScript for toggle menu -->
+  
+  <script>
+  document.getElementById("frente").style.marginTop = `190px`;
+  document.getElementById("logao").style.marginLeft = `${document.body.offsetWidth - (document.body.offsetWidth * 0.80)}px`;
 
-<!-- JavaScript for toggle menu -->
-
-<script>
-    var navLinks = document.getElementById("navLinks");
+  var navLinks = document.getElementById("navLinks");
 
     function showMenu(){
         navLinks.style.right = "0";
@@ -198,15 +228,17 @@ src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
     }
 
 
-var largura = document.body.offsetWidth;
-var altura = document.body.offsetHeight;
+//var largura = document.body.offsetWidth;
+//var altura = document.body.offsetHeight;
 
-const fundao = ["red", "green", "yellow", "violet"];
-const imagem = ["paulista", "concert", "festival", "tech"];
+//const fundao = ["red", "green", "yellow", "violet"];
+//const imagem = ["paulista", "concert", "festival", "tech"];
 
-for (let index = 0; index < imagem.length; index++) {
-  document.getElementById(`${fundao[index]}`).style.backgroundImage = `url('https://source.unsplash.com/random/${largura}x${altura}/?${imagem[index]}')`;
-}
+//for (let index = 0; index < imagem.length; index++) {
+//  document.getElementById(`${fundao[index]}`).style.backgroundImage = `url('https://source.unsplash.com/random/${largura}x${altura}/?${imagem[index]}')`;
+//}
+
+
 
 </script>
 

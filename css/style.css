@@ -1,0 +1,99 @@
+:root {
+    --primary-color: #0C355B;
+    --secondary-color: #157044;
+    --dark-color: #0d0d0d;
+    --light-color: #f4f4f4;
+    --tertiary-color: #AEAD99;
+    --quaternary-color:  #7B7E67;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--light-color);
+    color: var(--dark-color);
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.flex{
+    align-items: center;
+    display: flex;
+    height: 100%;
+}
+
+.container {
+    /*max-width: 1100px;*/
+              margin: 0 auto;
+              overflow: auto;
+              padding: 0 0;
+          }
+
+
+.container .flex{
+    justify-content: space-around;
+}
+
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: var(--light-color);;
+    font-weight: bolder;
+    border: 1px solid var(--primary-color);
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn:hover{
+    background: var(--primary-color);
+    transition: 1s;
+}
+
+/* course */
+h1{
+    font-size: 36px;
+    font-weight: 600;
+
+}
+
+p{
+
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+
+}
+
+.filter-green{
+ 
+    filter: invert(14%) sepia(100%) saturate(3494%) hue-rotate(154deg) brightness(98%) contrast(84%);
+    }
+/*contact page*/
+
